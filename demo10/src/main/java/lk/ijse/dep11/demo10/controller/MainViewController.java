@@ -17,10 +17,11 @@ public class MainViewController {
     public Label lblBalance;
     public Button btnPrintPassbook;
 
-    double accountBalance;
+    double accountBalance = 5000;
     ArrayList<Transaction> transactionList = new ArrayList<>();
 
     public void initialize() {
+        lblBalance.setText(String.format("Balance: Rs. %,.2f", accountBalance));
         btnDeposit.setDisable(true);
         btnWithdraw.setDisable(true);
         txtAmount.setEditable(true);
@@ -73,6 +74,13 @@ public class MainViewController {
         System.out.printf(LINE);
         System.out.printf("|%-20s|%-15s|%15s|%15s|\n", "DATE TIME", "TRANSACTION", "AMOUNT", "BALANCE");
         System.out.printf(LINE);
+        if (!transactionList.isEmpty()) {
+            System.out.printf("|%-20s|%-15s|%,15.2f|%,15.2f|\n",
+                    "",
+                    "OPENING BALANCE",
+                    0.0,
+                    transactionList.get(0).openingBalance);
+        }
         for (Transaction transaction : transactionList) {
             System.out.printf("|%-20s|%-15s|%,15.2f|%,15.2f|\n",
                     transaction.dateTime,
