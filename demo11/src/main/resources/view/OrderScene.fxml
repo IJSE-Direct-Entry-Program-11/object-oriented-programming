@@ -91,9 +91,9 @@
         <columns>
           <TableColumn prefWidth="75.0" text="CODE" />
           <TableColumn prefWidth="139.0" text="DESCRIPTION" />
-            <TableColumn prefWidth="46.0" text="QTY." />
-            <TableColumn prefWidth="98.0" text="PRICE" />
-            <TableColumn prefWidth="98.0" text="TOTAL" />
+            <TableColumn prefWidth="46.0" style="-fx-alignment: center;" text="QTY." />
+            <TableColumn prefWidth="98.0" style="-fx-alignment: center-right;" text="PRICE" />
+            <TableColumn prefWidth="98.0" style="-fx-alignment: center-right;" text="TOTAL" />
         </columns>
       </TableView>
       <Button fx:id="btnNewOrder" layoutX="608.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnNewOrderOnAction" text="NEW ORDER +" AnchorPane.rightAnchor="14.0">
