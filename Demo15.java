@@ -50,6 +50,7 @@ class C extends B {
     int x = 30;
     public C(){
         System.out.println("C's constructor");
+        System.arraycopy(getClass(), x, getClass(), x, x);
     }
     static {
         System.out.println("C class is being initialized");
@@ -57,7 +58,7 @@ class C extends B {
     {
         System.out.println("C's intance initializer");
     }
-    public void myMethod() throws SQLException, ClassNotFoundException{
+    public void myMethod() {//throws SQLException, ClassNotFoundException{
         System.out.println("C's myMethod()");
     }
 }
