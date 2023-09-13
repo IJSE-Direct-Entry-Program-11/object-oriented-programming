@@ -26,6 +26,8 @@ abstract class User {
 
     public abstract void login();
 
+    //public static abstract doSomething();
+
     public void logout(){
         if (logged){
             System.out.printf("%s logged out \n", username);

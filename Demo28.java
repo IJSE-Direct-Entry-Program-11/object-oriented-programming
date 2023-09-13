@@ -1,3 +1,5 @@
+import java.io.Serializable;
+
 public class Demo28 {
     public static void main(String[] args) {
         // String -> Enum
@@ -31,6 +33,6 @@ public class Demo28 {
     }
 }
 
-enum WeekDays{
+enum WeekDays implements Serializable{
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 }

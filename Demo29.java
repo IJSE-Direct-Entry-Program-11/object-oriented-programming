@@ -94,7 +94,7 @@ class MyConsoleWriter extends MyWriter {
 
     @Override
     public void write(String message) {
-        System.out.printf("%s%s%s", color.getColor(), message, "\033[0m");
+        System.out.printf("%s%s%s \n", color.getColor(), message, "\033[0m");
     }}
 
 enum Color {
