@@ -16,3 +16,13 @@ class DEP extends IJSE{
         System.out.println("DEP is being initialized");
     }
 }
+
+interface IMyInterface {
+    double PI = 3.14;
+
+    void execute();
+
+    default void print(){}
+
+    static void myStaticMethod(){}
+}

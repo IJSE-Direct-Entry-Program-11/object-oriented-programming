@@ -2,7 +2,9 @@ package hiding;
 
 public class Demo {
     public static void main(String[] args) {
-        new Dream().myMethod();
+        Dream.execute();
+        // new Dream().myMethod();
+        //System.out.println(Idea2.class instanceof Object);
     }
 }
 
