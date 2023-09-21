@@ -11,7 +11,7 @@ public class Demo36 {
         // int String = 10;
         // int System = 10;
         // System.out.println(String.format("%s", "kasun"));
-        new mypackage.Customer();
+        // new mypackage.Customer();
     }
 }
 
